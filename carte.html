@@ -1,1 +1,29 @@
-b.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carte Otaku</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Créer votre Carte Otaku</h1>
+    <form id="otakuForm">
+      <input type="text" id="username" placeholder="Votre nom ou pseudo" required>
+      <input type="text" id="animeFav" placeholder="Votre anime préféré" required>
+      <input type="text" id="specialSkill" placeholder="Votre compétence spéciale" required>
+      <button type="button" id="generateButton">Générer ma carte</button>
+    </form>
+    <button id="intermediateButton" class="hidden">Aller vers la carte</button>
+    <div id="otakuCard" class="hidden">
+      <h2>🎴 Carte Otaku 🎴</h2>
+      <p><strong>Nom :</strong> <span id="cardUsername"></span></p>
+      <p><strong>Anime préféré :</strong> <span id="cardAnimeFav"></span></p>
+      <p><strong>Compétence spéciale :</strong> <span id="cardSpecialSkill"></span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
